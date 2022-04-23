@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.TopPlace ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+div.TopPlace {
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    
+}
