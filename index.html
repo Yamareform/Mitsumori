@@ -10,42 +10,62 @@
     <h1>リフォームの簡単お見積り</h1>
 </header>
 <main>
-<h1>リフォーム箇所を選択してください。</h1>
-<p>※ボタンをクリックしてください。</p>
+<p>リフォーム箇所を選択してください。</p>
+<p>※ボタンをクリックしてください。(複数選択可）</p>
 <div class="TopPlace">
     <ul>
-        <li><input type="checkbox" name="place" value="外壁塗装" onclick="buttonClick()">外壁塗装</li>
-        <li><input type="checkbox" name="place" value="外壁張替え" onclick="buttonClick()">外壁張替え</li>
-        <li><input type="checkbox" name="place" value="屋根補修">屋根補修</li>
-        <li><input type="checkbox" name="place" value="屋根葺き替え">屋根葺き替え</li>
-        <li><input type="checkbox" name="place" value="内装">内装</li>
-        <li><input type="checkbox" name="place" value="外構">外構</li>
-        <li><input type="checkbox" name="place" value="伐採">伐採</li>
-        <li><input type="checkbox" name="place" value="消毒">消毒</li>
-        <li><input type="checkbox" name="place" value="木工事">木工事</li>
-        <li><input type="checkbox" name="place" value="水回り">水回り</li>
+        <label><li><input type="checkbox" name="place" value="外壁塗装" onclick="buttonClick()">外壁塗装</li></label>
+        <label><li><input type="checkbox" name="place" value="外壁張替え" onclick="buttonClick()">外壁張替え</li></label>
+        <label><li><input type="checkbox" name="place" value="屋根補修">屋根補修</li></label>
+        <label><li><input type="checkbox" name="place" value="屋根葺き替え">屋根葺き替え</li></label>
+        <label><li><input type="checkbox" name="place" value="屋根葺き替え">屋根葺き替え</li></label>
+        <label><li><input type="checkbox" name="place" value="内装">内装</li></label>
+        <label><li><input type="checkbox" name="place" value="外構">外構</li></label>
+        <label><li><input type="checkbox" name="place" value="伐採">伐採</li></label>
+        <label><li><input type="checkbox" name="place" value="消毒">消毒</li></label>
+        <label><li><input type="checkbox" name="place" value="木工事">木工事</li></label>
+        <label><li><input type="checkbox" name="place" value="水回り">水回り</li></label>
     </ul>
 </div>
 
 <div class="TopConstruc">
-    <h1>構造を選択してください。</h1>
+    <p>構造を選択してください。</p>
     <ul>
-        <li><input type="button" name="construc" value="在来">在来</li>
-        <li><input type="button" name="construc" value="2×4">2×4</li>
-        <li><input type="button" name="construc" value="RC造">RC造</li>
-        <li><input type="button" name="construc" value="鉄骨">鉄骨</li>
-        <li><input type="button" name="construc" value="在来">在来</li>
+        <label><li><input type="radio" name="construc" value="在来">在来</li></label>
+        <label><li><input type="radio" name="construc" value="2×4">2×4</li></label>
+        <label><li><input type="radio" name="construc" value="RC造">RC造</li></label>
+        <label><li><input type="radio" name="construc" value="鉄骨">鉄骨</li></label>
+        <label><li><input type="radio" name="construc" value="在来">在来</li></label>
     </ul>
 </div>
 
 <div>
-  <p>建坪を入力してください。</p>
-  <input type="text" name="tsubo">坪
+    <p>建坪を入力してください。</p>
+    <input type="text" name="tsubo">坪
 </div>
 
 <div>
-  <p>施工時期のご予定を選択してください。</p>
+    <p>施工時期のご予定を選択してください。</p>
+        
+            <input type="date" name="yotei">
+                <label><p><input type="checkbox" name="mitei" value="未定">まだ決めていない。</p></label>
+        
 </div>
+
+<div>
+    <p>他社のお見積り依頼をされていますか？</p>
+        <label><p><input type="checkbox" name="new" value="初めて">していない。</p></label>
+        <label><p><input type="checkbox" name="requ" value="依頼">依頼している</p></label>
+    </div>
+
+<div>
+    <p>ご予定金額を入力してください。</p>
+    <label><p><input type="text" id="moneytext">円くらいの予定</p></label>
+</div>
+
+<button><a href="next.html" class="next">次へ</a></button>
+
+    
 </main>
 
 </body>
